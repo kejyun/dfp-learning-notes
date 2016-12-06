@@ -17,12 +17,26 @@
 * %%TARGET_WINDOW%% : 目標視窗巨集
 * %%TFCD%% : 兒童導向內容通報標記巨集
 * [%URI_ENCODE:variable%] : URI 逸出巨集
+* %%ADVERTISING_IDENTIFIER_PLAIN%% : 傳遞裝置編號巨集 (iOS、Android、Roku 和 tvOS)
+* %eaid! : 委刊項編號
+* %eadv! : 所放送委刊項的廣告客戶編號
+* %ebuy! : 所放送委刊項的委刊單編號
+* %ecid! : 廣告素材編號
+* %eenv! : 環境 (標記類型) 指標：i 代表 iFrame，j 代表 JavaScript
+* %epid! : 委刊項放送目標廣告單元編號
+* %esid! : 委刊項放送目標廣告單元上方的最高級廣告單元編號
+* %%PREVIEW_MODE%% : 預覽模式巨集
+* %%SCHEME%% : 架構巨集(http: 或 https:)
+* %%SITE%% : 網站巨集
+* %%VIEW_URL_ESC%% : 已瀏覽曝光巨集（過濾跳脫字元 1 次）
+* %%VIEW_URL_UNESC%% : 已瀏覽曝光巨集（不要過濾跳脫字元）
 
-> 新視窗巨集中的目標可展開成某個值，而這個值會對應至針對發佈商指定的目標視窗，以及廣告放送位置的廣告版位：
+## 影片專用巨集
 
-> 如果目標視窗是 _blank，巨集會展開成 1。
-
-> 如果目標視窗是任何其他值，或是未指定任何視窗，巨集將展開成 0。
+* %%DESCRIPTION_URL_UNESC%% : 影片說明網址巨集（不要過濾跳脫字元）
+* %%DESCRIPTION_URL_ESC_ESC%% : 影片說明網址巨集（過濾跳脫字元 2 次）
+* %%REFERRER_URL_UNESC%% : 影片參照網址巨集（不要過濾跳脫字元）
+* %%REFERRER_URL_ESC_ESC%% : 影片參照網址巨集（過濾跳脫字元 2 次）
 
 
 > 跳脫字元 : & ?
