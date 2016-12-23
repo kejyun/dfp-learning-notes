@@ -1,5 +1,20 @@
 # Google Publisher Tag
 
+## 顯示廣告單元
+
+***[googletag.display(div)](https://developers.google.com/doubleclick-gpt/reference#googletag.disablePublisherConsole)***
+
+```html
+<div id="div-1" style="width: 728px; height: 90px">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+        //  將廣告單元顯示在 div-1
+        googletag.display('div-1');
+    });
+  </script>
+</div>
+```
+
 ## 指定解析度顯示指定廣告大小廣告
 
 ***[SizeMappingBuilder](https://developers.google.com/doubleclick-gpt/reference#googletag.SizeMappingBuilder)***
@@ -25,6 +40,31 @@ googletag.cmd.push(function() {
             .defineSizeMapping(mapping)
             .addService(googletag.pubads());
 });
+```
+
+## 移除指定廣告空間
+
+***[googletag.destroySlots(opt_slots)](https://developers.google.com/doubleclick-gpt/reference#googletag.destroySlots)***
+
+
+```javascript
+var slot = googletag.defineSlot('/123/dfp_slot_name', [[300, 250] , [728, 90], [970, 250], [970, 90]], 'dfp_display_div_id')
+            .defineSizeMapping(mapping)
+            .addService(googletag.pubads());
+
+googletag.display('dfp_display_div_id');
+// 移除指定廣告空間
+googletag.destroySlots([slot1]);
+```
+
+## 開啟廣告 console
+
+```javascript
+// 透過 div 編號呼叫
+googletag.openConsole('div-1');
+
+// 不透過 div 編號呼叫
+googletag.openConsole();
 ```
 
 ## 參考資料
