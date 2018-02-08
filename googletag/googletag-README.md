@@ -1,8 +1,25 @@
-# Google Publisher Tag
+# Google Publisher Tag（GPT）
 
 ## 顯示廣告單元
 
 ***[googletag.display(div)](https://developers.google.com/doubleclick-gpt/reference#googletag.disablePublisherConsole)***
+
+每一個廣告空間應該每一頁只顯示一次，在顯示廣告之前，應先定義好
+
+## 啟用 GPT 服務
+
+***[googletag.enableServices()](https://developers.google.com/doubleclick-gpt/reference#googletag.enableServices)***
+
+## 取得 GPT 版本
+
+***[googletag.getVersion()](https://developers.google.com/doubleclick-gpt/reference#googletag.getVersion)***
+
+## 啟用同步載入
+
+***[googletag.enableSyncLoading()](https://developers.google.com/doubleclick-gpt/reference#googletag.CompanionAdsService_enableSyncLoading)***
+
+同步載入廣告，必須在呼叫 `googletag.enableServices()` 前就呼叫
+
 
 ```html
 <div id="div-1" style="width: 728px; height: 90px">

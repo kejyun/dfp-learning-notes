@@ -1,5 +1,8 @@
 # Summary
 
+## 廣告設定
+* [廣告發佈](setting/setting-advertisement-publish.md)
+
 ## 巨集（macros）
 * [參數](macros/support-macro.md)
 
