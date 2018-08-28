@@ -8,6 +8,7 @@
 
 ## Google Publisher Tag
 * [範例](googletag/googletag-README.md)
+* [事件](googletag/googletag-event.md)
 
 ## 參考資料
 * [網站](reference/websites.md)
